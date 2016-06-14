@@ -58,9 +58,10 @@ The timestamps are removed because the actual time the user perfomed the actions
 
 
 ```r
-#We remove the first index column, the user name, timestamps and new window var from both sets.
+#We remove the first index column, the user name, timestamps and new window var from the sets.
 training <- training[,-c(1:6)]
 testing <- testing[,-c(1:6)]
+crossValidation <- crossValidation[,-c(1:6)]
 ```
 
 
